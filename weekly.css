@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,600&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+body{
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width:90%;
+    
+    color: white;
+    font-size: 1.1em;
+    
+}
+
+.dia{
+    display:flex;
+    background-color: black;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 12px;
+    justify-content: center;
+    border: 2px solid white;
+    width:100%;
+}
+
+.temp{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width:100%;
+}
+
+.min-tempo, .max-tempo{
+    display: flex;
+    justify-content: center;
+    width:50%;
+}
+.min-tempo{
+    border-right: 1px solid red;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.search-bar{
+    width: calc(100% - 80px);
+    outline: none;
+    border: none;
+    padding:.5em 1em;
+    border-radius: 20px;
+    font-size: 1.1em;
+    font-weight: 500;
+    background: black;
+    color:white;
+}
+
+.search button{
+    margin:.5em;
+    height:46px;
+    width:46px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    color:rgb(255, 255, 255);
+    background-color: black;
+    transition: .3s ease;
+}
+
+.search button:hover{
+    background:white;
+    color: black;
+}
+
+.icon{
+    height:50px;
+    width:50px;
+}
+
+h1{
+    background:linear-gradient(120deg,rgb(68, 162, 194), rgb(44, 39, 39));
+    color: rgb(255, 255, 255);
+    width: 100%;
+    max-width: 450px;
+    padding:10px;
+    border-radius: 20px;
+    display: inline-block;
+    text-align: center;
+    transition: .3s ease;
+}
+
+@media only screen and (max-width:768px) {
+    body{
+        height:auto;
+    }
+
+    .container{
+        max-width:90%;
+        flex-wrap: wrap;
+    }
+}
