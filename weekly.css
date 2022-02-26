@@ -11,6 +11,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background: url('https://source.unsplash.com/1600x900/?Landscape');
 }
 
 .container{
@@ -26,13 +27,18 @@ body{
 
 .dia{
     display:flex;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.487);
+    backdrop-filter: blur(10px);
     flex-direction: column;
     align-items: center;
     border-radius: 12px;
     justify-content: center;
-    border: 2px solid white;
+    margin:5px;
     width:100%;
+}
+
+.dia > p:first-child{
+    font-size:2em;
 }
 
 .temp{
@@ -94,8 +100,9 @@ body{
 }
 
 h1{
-    background:linear-gradient(120deg,rgb(68, 162, 194), rgb(44, 39, 39));
-    color: rgb(255, 255, 255);
+    background:rgba(255, 255, 255, 0.549);
+    backdrop-filter: blur(4px);
+    color: black;
     width: 100%;
     max-width: 450px;
     padding:10px;
@@ -108,10 +115,17 @@ h1{
 @media only screen and (max-width:768px) {
     body{
         height:auto;
+        margin-top: 0;
     }
 
     .container{
         max-width:90%;
         flex-wrap: wrap;
+    }
+    h1{
+       border-radius: 20px;
+       max-width: 90%;
+        
+        margin-top:0;
     }
 }

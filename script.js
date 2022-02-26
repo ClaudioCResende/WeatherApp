@@ -27,13 +27,13 @@ let weather = {
 
 document.querySelector('button').addEventListener('click',()=>{
     const city = document.querySelector('.search-bar').value;
-    document.body.style.backgroundImage = "url('https://source.unsplash.com/1600x900/?' " + city + " ')";
+    // document.body.style.backgroundImage = "url('https://source.unsplash.com/1600x900/?' " + city + " ')";
     weather.fetchWeather(city);
 });
 
 document.querySelector('.search-bar').addEventListener('keypress', e=>{
     const city = document.querySelector('.search-bar').value;
-    document.body.style.backgroundImage = "url('https://source.unsplash.com/1600x900/?' " + city + " ')";
+    // document.body.style.backgroundImage = "url('https://source.unsplash.com/1600x900/?' " + city + " ')";
     if(e.key == 'Enter'){
         weather.fetchWeather(city);
     }
